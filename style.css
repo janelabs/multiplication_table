@@ -1,0 +1,10 @@
+.box{
+    width: 50px;
+    height: 50px;
+    background-color: #8b0000;
+    position: relative;
+}
+
+.red{
+    color: red;
+}
