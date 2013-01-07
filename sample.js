@@ -28,7 +28,8 @@ var Sample = {
         //add col
         var colCtr = 1;
         $('#addCol').click(function(){
-            $('<th>'+ colCtr++ +'</td>').appendTo($('#ths'));
+            //$('<th>'+ colCtr++ +'</td>').appendTo($('#ths'));
+            alert("Computation for column not yet done");
         });
     }
 };
