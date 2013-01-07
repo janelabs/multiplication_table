@@ -1,1 +1,1 @@
-Read Me
+This repository is use for testing basic git commands.
