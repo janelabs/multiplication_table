@@ -12,24 +12,33 @@ var Sample = {
         //add row
         var rowCtr = 1;
         $('#addRow').click(function(){
-            var tds = "";
-            $('#ths th').each(function(){
-                if($(this).html() > 0){
-                    tds += '<td>'+ rowCtr * $(this).html() +'</td>';
+            var tdsRow = "";
+            $('#ths td').each(function(){
+                if($(this).html() > 1){
+                    tdsRow += '<td>'+ rowCtr * $(this).html() +'</td>';
                 }
                 else{
-                    tds += '<td>'+ rowCtr +'</td>';
+                    tdsRow += '<td>'+ rowCtr +'</td>';
                 }
             });
-            $('<tr>'+ tds +'</tr>').appendTo($('#tbl'));
+            $('<tr>'+ tdsRow +'</tr>').appendTo($('#tbl'));
             rowCtr++;
         });
 
         //add col
-        var colCtr = 1;
+        var colCtr = 2;
         $('#addCol').click(function(){
-            //$('<th>'+ colCtr++ +'</td>').appendTo($('#ths'));
-            alert("Computation for column not yet done");
+            $('#tbl tr').each(function(key, val){
+                var a = $(val).text();
+                var b = parseInt(a.charAt(0));
+                if(b){
+                    $('<td>'+ colCtr * b +'</td>').appendTo($(this));
+                }
+                else{
+                    $('<td>'+ colCtr +'</td>').appendTo($(this));
+                }
+            });
+            colCtr++
         });
     }
 };
