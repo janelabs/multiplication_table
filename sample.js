@@ -12,33 +12,24 @@ var Sample = {
         //add row
         var rowCtr = 1;
         $('#addRow').click(function(){
-            var tdsRow = "";
-            $('#ths td').each(function(){
-                if($(this).html() > 1){
-                    tdsRow += '<td>'+ rowCtr * $(this).html() +'</td>';
+            var tds = "";
+            $('#ths th').each(function(){
+                if($(this).html() > 0){
+                    tds += '<td>'+ rowCtr * $(this).html() +'</td>';
                 }
                 else{
-                    tdsRow += '<td>'+ rowCtr +'</td>';
+                    tds += '<td>'+ rowCtr +'</td>';
                 }
             });
-            $('<tr>'+ tdsRow +'</tr>').appendTo($('#tbl'));
+            $('<tr>'+ tds +'</tr>').appendTo($('#tbl'));
             rowCtr++;
         });
 
         //add col
-        var colCtr = 2;
+        var colCtr = 1;
         $('#addCol').click(function(){
-            $('#tbl tr').each(function(key, val){
-                var a = $(val).text();
-                var b = parseInt(a.charAt(0));
-                if(b){
-                    $('<td>'+ colCtr * b +'</td>').appendTo($(this));
-                }
-                else{
-                    $('<td>'+ colCtr +'</td>').appendTo($(this));
-                }
-            });
-            colCtr++
+            //$('<th>'+ colCtr++ +'</td>').appendTo($('#ths'));
+            alert("Computation for column not yet done");
         });
     }
 };
