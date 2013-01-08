@@ -1,8 +1,20 @@
 .box{
-    width: 50px;
-    height: 50px;
-    background-color: #8b0000;
+    width: 14px;
+    height: 22px;
     position: relative;
+}
+
+.bg-red{
+    background-color: #8b0000;
+}
+
+.bg-green{
+    background-color: #006400;
+
+}
+
+.bg-blue{
+    background-color: #4169e1;
 }
 
 .red{
