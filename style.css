@@ -1,3 +1,22 @@
+body{
+    font-size: 12px !important;
+    font-family: arial sans-serif;
+}
+
 .red{
     color: red;
+}
+
+.tooltip-class{
+    font-size: 11px !important;
+}
+
+.btsn{
+    width: 122px;
+    height: 26px;
+    padding: 0px !important;
+}
+
+.btn-txt{
+    font-size: 14px !important;
 }

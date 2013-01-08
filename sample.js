@@ -31,5 +31,16 @@ var Sample = {
             });
             colCtr++
         });
+
+        //tooltip show
+        $(document).tooltip({
+            tooltipClass: "tooltip-class",
+            position: { my: "left+15 center", at: "right center" }
+        });
+
+        //button style
+        $('button').button({
+            icons: { primary: "ui-icon-plus" }
+        });
     }
 };
