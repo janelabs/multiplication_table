@@ -2,12 +2,6 @@ var Sample = {
 
     initView: function(){
         //box click
-        $('#the_box').click(function(){
-            var pos = $(this).position();
-            var leftPos = pos.left;
-
-            $(this).css({ left: leftPos+1 });
-        });
 
         //add row
         var rowCtr = 1;
