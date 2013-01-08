@@ -23,7 +23,6 @@ var Sample = {
         var colCtr = 2;
         $('#addCol').click(function(){
             $('#tbl tr').each(function(){
-                console.log($($(this).find('td:first')).text());
                 var b = parseInt($($(this).find('td:first')).text());
                 if(b){
                     $('<td>'+ colCtr * b +'</td>').appendTo($(this));
