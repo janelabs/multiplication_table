@@ -1,10 +1,8 @@
 var Sample = {
 
     initView: function(){
-        //box click
-
         //add row
-        var rowCtr = 1;
+        var rowCtr = 2;
         $('#addRow').click(function(){
             var tds = "";
             $('#ths td').each(function(){
