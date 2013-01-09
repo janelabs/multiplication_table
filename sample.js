@@ -26,7 +26,7 @@ var Sample = {
                     $('<td>'+ colCtr * b +'</td>').appendTo($(this));
                 }
                 else{
-                    $('<td>'+ colCtr +'</td>').appendTo($(this));
+                    $('<td>'+ colCtr +'</td>').appendTo( $(this));
                 }
             });
             colCtr++;
