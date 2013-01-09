@@ -29,7 +29,7 @@ var Sample = {
                     $('<td>'+ colCtr +'</td>').appendTo($(this));
                 }
             });
-            colCtr++
+            colCtr++;
         });
 
         //tooltip show
