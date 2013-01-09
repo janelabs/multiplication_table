@@ -20,3 +20,8 @@ body{
 .btn-txt{
     font-size: 14px !important;
 }
+
+.tbl-style{
+    font-size: 20px;
+    background-color:#d3d3d3;
+}
