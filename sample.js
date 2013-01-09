@@ -23,7 +23,7 @@ var Sample = {
             $('#tbl tr').each(function(){
                 var b = parseInt($($(this).find('td:first')).text());
                 if(b){
-                    $('<td>'+ colCtr * b +'</td>').appendTo($(this));
+                    $('<td>'+ colCtr * b +'</td>').appendTo( $(this));
                 }
                 else{
                     $('<td>'+ colCtr +'</td>').appendTo($(this));
