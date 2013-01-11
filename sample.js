@@ -42,5 +42,11 @@ var Sample = {
         $('button').button({
             icons: { primary: "ui-icon-plus" }
         });
+
+        $('#pink_row').click(function(){
+            $('#tbl td').each(function(){
+                $(this).css({ 'background-color':'pink' });
+            });
+        });
     }
 };
