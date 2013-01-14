@@ -26,7 +26,7 @@ var Sample = {
                     $('<td>'+ colCtr * b +'</td>').appendTo($(this));
                 }
                 else{
-                    $('<td>'+ colCtr +'</td>').appendTo( $(this));
+                    $('<td>'+ colCtr +'</td>').appendTo($(this));
                 }
             });
             colCtr++;
@@ -41,6 +41,15 @@ var Sample = {
         //button style
         $('button').button({
             icons: { primary: "ui-icon-plus" }
+        });
+
+        //change background
+        $('#pink_tbl').button({
+            icons: { primary: "ui-icon-brush" }
+        }).click(function(){
+            $('td').each(function(){
+                $(this).css({ 'background-color':'pink' });
+            });
         });
     }
 };
