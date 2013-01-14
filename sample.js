@@ -43,6 +43,7 @@ var Sample = {
             icons: { primary: "ui-icon-plus" }
         });
 
+        //change background
         $('#pink_tbl').button({
             icons: { primary: "ui-icon-brush" }
         }).click(function(){
